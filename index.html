@@ -1,84 +1,105 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-initial-scale=1.0">
-    <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <section id="header">
+        <h1 class="titulo">Justyn Jael Roldán Méndez</h1>
+        <h4 class="subtitulo">Grado en Ingenieria en Computación</h4>
+        <img id="photo" src="https://placehold.co/400" width="200" height="200">
+        <link rel="stylesheet" href="styles.css">
+    </section>
 </head>
 
-<body>
-    <header>
-        <p>Tu Cargo | Tu Email | Tu Teléfono</p>
-        <h1>Justyn Roldán Méndez</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="resumen">
-            <h2>Resumen</h2>
-            <p>Breve descripción de tus habilidades y experiencia.</p>
-        </section>
-        <section id="experiencia">
-            <h2>Experiencia</h2>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-            </p>
-        </section>
-        <section id="educacion">
-            <h2>Educación</h2>
+<body>
+    <main>
+
+        <nav>
             <ul>
-                <li>Espol - Ingenieria en computación</a></li>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.39567658032!2d-80.31186098959913!3d25.78253887446271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses!2sec!4v1728501453504!5m2!1ses!2sec"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <li><a href="#resumen">Resumen</a></li>
+                <li><a href="#Experiencia Laboral">Experiencia</a></li>
+                <li><a href="#Educación">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="Experiencia Laboral">
+            <h2>Experiencia Laboral</h2>
+        </section>
+
+        <section id="Educación">
+            <h2>Educación</h2>
             </ul>
         </section>
-        <section id="habilidades">
+
+        <section id="Contacto">
+            <h2 id="titulo-contacto">Contacto</h2>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5477.680157429851!2d-79.8691736396108!3d-2.2284295703715786!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1728501185417!5m2!1ses!2sec" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <form>
+                
+                <div>
+                    <span>
+                        <label for="nombre">Nombre:</label>
+                    </span>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div><br>
+                
+                <div>
+                    <span>
+                        <label for="apellido">Apellido:</label></label>
+                    </span>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div><br>
+
+                <div>
+                    <span>
+                        <label for="email">Correo Electrónico:</label>
+                    </span>
+                    <input type="email" id="email" name="email" required>
+                </div><br>
+
+                
+                <div>
+                    <span>
+                        <label for="telefono">Teléfono:</label>
+                    </span>
+                    <input type="input" maxlength="10" id="telefono" name="telefono" required>
+                </div><br>
+
+                <div>
+                    <span>
+                        <label for="comentarios">Comentarios:</label>
+                    </span>
+                    <textarea id="telefono" name="telefono" maxlength="250"></textarea>
+                </div>
+                
+            </form>
+
+        </section>
+
+        <section id="Habilidades">
             <h2>Habilidades</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qz9gmiLBVFA?si=KjZDHnEztpRHTUJH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/Y5VJnxDLaZY?si=N97pAqy4UuKPloEg" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
         </section>
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-        </section>
-        <section>
-            <h2>Contacto</h2>
-            <form id="solicitudForm">
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-        
-                <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-        <label for="experiencia">Experiencia:</label>
-        <textarea id="experiencia" name="experiencia" required></textarea>
-        <label><input type="checkbox" name="habilidad" value="HTML"> HTML</label>
-        <label><input type="checkbox" name="habilidad" value="CSS"> CSS</label>
-        <label><input type="checkbox" name="habilidad" value="JavaScript"> JavaScript</label>
-        
-        <label for="intereses">Intereses:</label>
-        <input type="text" id="intereses" name="intereses">
-        
-        <button type="submit">Enviar</button>
-        </form>
-        </section>
-        </main>
-        <footer>
-            <p>© Tu Nombre - 2023</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-                <li><a href="https://github.com/tunombre">GitHub</a></li>
-        </ul>
-    </footer>
+
+
+
+    </main>
+
 </body>
 
 </html>
