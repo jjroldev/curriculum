@@ -5,101 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum</title>
-    <section id="header">
-        <h1 class="titulo">Justyn Jael Roldán Méndez</h1>
-        <h4 class="subtitulo">Grado en Ingenieria en Computación</h4>
-        <img id="photo" src="https://placehold.co/400" width="200" height="200">
-        <link rel="stylesheet" href="styles.css">
-    </section>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
-
 <body>
-    <main>
+    <div class="container">
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#sobremi">Información Personal</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <section class="header-content">
+                <h1>Justyn Jael Roldán Méndez</h1>
+                <h4 class="subtitulo">Grado en Ingenieria en Computación</h4>
+                <img id="photo-perfil" src="https://placehold.co/400">
+            </section>
+        </header>
 
-        <nav>
-            <ul>
-                <li><a href="#resumen">Resumen</a></li>
-                <li><a href="#Experiencia Laboral">Experiencia</a></li>
-                <li><a href="#Educación">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <main>
+            <section id="sobremi">
+                <h2>Sobre Mi</h2>
+            </section>
 
-        <section id="Experiencia Laboral">
-            <h2>Experiencia Laboral</h2>
-        </section>
+            <section id="experiencia">
+                <h2>Experiencia Laboral</h2>
+            </section>
 
-        <section id="Educación">
-            <h2>Educación</h2>
-            </ul>
-        </section>
+            <section id="educacion">
+                <h2>Educación</h2>
+            </section>
 
-        <section id="Contacto">
-            <h2 id="titulo-contacto">Contacto</h2>
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5477.680157429851!2d-79.8691736396108!3d-2.2284295703715786!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1728501185417!5m2!1ses!2sec" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <h3>He realizado proyectos con las siguientes tecnologías: </h3>
+                <ul class="habilidades">
+                    <li><i class="fab fa-java"></i></li>
+                    <li><i class="fab fa-python"></i></li>
+                    <li><i class="fas fa-database"></i></li>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                </ul>
+            </section>
 
-            <form>
-                
-                <div>
-                    <span>
-                        <label for="nombre">Nombre:</label>
-                    </span>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div><br>
-                
-                <div>
-                    <span>
-                        <label for="apellido">Apellido:</label></label>
-                    </span>
-                    <input type="text" id="apellido" name="apellido" required>
-                </div><br>
+            <section id="proyectos">
+                <h2>Proyectos</h2>
+                <p>He realizado proyectos de índole académicos, algunos de estos proyectos son:</p>
+                <div class="proyectos-content">
+                    <ul class="proyectos">
+                        <li>
+                            <div class="proyecto">
+                                <div class="proyecto-content">
+                                    <h3>Piensa en un animal</h3>
+                                    <p>Este juego está construído en Java. Ek jugador piensa en un animal y a través de
+                                        una serie de preguntas, el juego interá adivinar que animal estabas pensando.
+                                        Principalmente se hace uso de arboles binarios.</p>
+                                    <img src="images/c1.png"></img>
+                                </div>
+                            </div>
 
-                <div>
-                    <span>
-                        <label for="email">Correo Electrónico:</label>
-                    </span>
-                    <input type="email" id="email" name="email" required>
-                </div><br>
-
-                
-                <div>
-                    <span>
-                        <label for="telefono">Teléfono:</label>
-                    </span>
-                    <input type="input" maxlength="10" id="telefono" name="telefono" required>
-                </div><br>
-
-                <div>
-                    <span>
-                        <label for="comentarios">Comentarios:</label>
-                    </span>
-                    <textarea id="telefono" name="telefono" maxlength="250"></textarea>
+                        </li>
+                        <li>
+                            <div class="proyecto">
+                                <div class="proyecto-content">
+                                    <h3>Piensa en un animal</h3>
+                                    <p>Este juego está construído en Java. Ek jugador piensa en un animal y a través de
+                                        una serie de preguntas, el juego interá adivinar que animal estabas pensando.
+                                        Principalmente se hace uso de arboles binarios.</p>
+                                    <img src="images/c1.png"></img>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="proyecto">
+                                <div class="proyecto-content">
+                                    <h3>Piensa en un animal</h3>
+                                    <p>Este juego está construído en Java. Ek jugador piensa en un animal y a través de
+                                        una serie de preguntas, el juego interá adivinar que animal estabas pensando.
+                                        Principalmente se hace uso de arboles binarios.</p>
+                                    <img src="images/c1.png"></img>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                
-            </form>
+            </section>
 
-        </section>
+            <section id="contacto">
+                <h2 class="titulo-contacto">Contactame</h2>
+                <div class="contact-content">
+                    <div class="formulario-contacto">
+                        <form action="">
+                            <div>
+                                <label for="nombre">Nombre completo:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
 
-        <section id="Habilidades">
-            <h2>Habilidades</h2>
-            <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/Y5VJnxDLaZY?si=N97pAqy4UuKPloEg" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-        </section>
+                            <div>
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
 
+                            <div>
+                                <label for="edad">Edad:</label>
+                                <input type="number" id="edad" name="edad" min="18">
+                            </div>
 
+                            <div>
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje"></textarea>
+                            </div>
 
-    </main>
+                            <input type="submit" class="enviar">
 
+                        </form>
+                    </div>
+
+                    <div class="contacto-presencial">
+                        <p>Si deseas contactarme presencialmente, cuento con una oficina en Guayaquil. Estoy disponible
+                            de lunes a viernes de 14h00 a 17h00</p>
+                        <iframe id="mapa"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0604626123686!2d-79.88148939999998!3d-2.1304532999999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d2285fb7081%3A0xd018e6a336c349c7!2sOFFICEGOLDEN!5e0!3m2!1ses!2sec!4v1729696349091!5m2!1ses!2sec"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 Justyn Jael Roldán Méndez</p>
+    </footer>
 </body>
 
 </html>

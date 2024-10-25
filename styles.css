@@ -1,64 +1,213 @@
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 200;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ultra&display=swap');
+
+* {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.titulo{
-    text-align: center;
-    font-weight: bold;
-}
-
-.subtitulo{
-    color: rgb(107 114 128 / 0.89);
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#photo{
-    width: 200px;
-    height: auto;
- 
-}
-
-section{
-    margin: 4px 2px 8px 2px; 
-    border: 0.2pt solid #cedddd;
-    padding: 1.5% 0.8%;
-    padding-left: 1.2%; 
-    padding-right: 1.2%; 
-    border-radius: 10px;
-    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-}
-
-section form {
-
-    /* Modelo de diseño en cuadrícula */
-    display: grid;									
-    row-gap: 0.5rem;
-
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    padding: 2%;
-}
-
-li{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-#Contacto:not(#titulo-contacto){
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(0, 127, 127);
+}
+
+
+.container {
+    margin: 0 80px;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+
+header {
+    padding-top: 20px;
+}
+
+h1 {
+    color: rgb(0, 127, 127);
+    font-weight: 900;
+    font-size: 80px;
+}
+
+.subtitulo {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.header-content {
+    gap: 15px;
+    font-size: 20px;
+    margin: 50px;
+    display: flex;
     flex-direction: column;
-    height: 24vh;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px rgb(0, 127, 127);
+}
+
+nav ul li a {
+    background-color: rgb(175, 44, 44);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+    padding: 25px 40px 30px 40px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(0, 127, 127);
+    color: #ffffff;
+}
+
+#photo-perfil {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Main content styles */
+main section {
+    margin: 40px 0;
+}
+
+/* Habilidades Section */
+
+.habilidades{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 40px;
+    gap: 40px;
+    text-align: center;
+}
+
+.habilidades li i {
+    font-size: 130px;
+}
+/* Proyects Section */
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 75px;
+}
+
+.proyectos-content {
+    padding: 30px;
+}
+
+.proyecto {
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    background-color: rgb(0, 127, 127);
+    color: #ffffff;
+}
+
+.proyecto-content {
+    text-align: center;
+    padding: 30px;
+}
+
+.proyecto-content h3{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.proyecto img{
+    width: 100%;
+}
+
+/* Contact Section */
+.contact-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-content div {
+    flex: 1 1 45%;
+}
+
+.formulario-contacto form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.enviar {
+    margin-top: 15px;
+}
+
+.formulario-contacto label{
+    font-size: 20px;
+    color: rgb(0, 127, 127);
+    font-weight: 400;
+}
+
+.formulario-contacto input {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.contacto-presencial {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
+
+.contacto-presencial p {
+    text-align: justify;
+    font-size:18px;
+}
+
+#mapa {
+    width: 100%;
+    height: 360px;
+}
+
+/* Footer */
+footer {
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(0, 127, 127);
+}
+
+
+@media(max-width: 790px){
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
