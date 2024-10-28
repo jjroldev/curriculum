@@ -159,13 +159,14 @@ nav ul li a:hover {
 
 .formacion-academica iframe {
     width: 70%;
-    height: auto;
+    height: 300px;
     margin: 0 auto;
 }
 
-/* Conocimientos Técnicos Section */
+/* Conocimientos Técnicos y Habilidades Blandas Section */
 
-.conocimientos-tecnicos{
+.conocimientos-tecnicos, .habilidades-blandas{
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     padding: 40px;
@@ -181,6 +182,16 @@ nav ul li a:hover {
 
 .conocimientos-tecnicos li i:hover {
     color: rgb(0, 127, 127);
+    transform: scale(1.2);
+}
+
+.habilidades-blandas li img {
+    width: 60%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; 
+}
+
+.habilidades-blandas li img:hover {
     transform: scale(1.2);
 }
 
@@ -336,6 +347,11 @@ footer {
     .proyecto-content,.video-proyecto-contenedor {
         width: 100%;
         text-align: center;
+    }
+
+    .formacion-academica iframe {
+        width: 80%;
+        height: 200px;
     }
 }
 
