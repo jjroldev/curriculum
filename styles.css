@@ -9,10 +9,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 2vh;
-}
-
 ul {
     list-style: none;
 }
@@ -57,7 +53,6 @@ section {
 }
 
 main {
-    transition: 0.5s;
     padding: 0 150px;
 }
 
@@ -68,6 +63,7 @@ h1 {
     color: rgb(0, 127, 127);
     font-weight: 800;
     font-size: clamp(50px, 9vw, 90px);
+    padding: 0 10px;
 }
 
 .subtitulo {
@@ -102,7 +98,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    font-size: clamp(15px, 2vw, 20px);
+    font-size: clamp(12px, 2vw, 20px);
     color: rgb(255, 255, 255);
     transition: background-color 0.4s ease-in-out;
     padding: 23px;
@@ -113,15 +109,16 @@ nav ul li a:hover {
 }
 
 #photo-perfil {
-    width: 15%;
+    width: 230px;
     height: auto;
     border-radius: 50%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,width 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 
 #photo-perfil:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 }
 
 /*Info Personal Section*/
@@ -168,7 +165,7 @@ nav ul li a:hover {
 .conocimientos-tecnicos, .habilidades-blandas{
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
     padding: 40px;
     gap: 90px;
     text-align: center;
@@ -186,7 +183,7 @@ nav ul li a:hover {
 }
 
 .habilidades-blandas li img {
-    width: 200px;
+    width: 130px;
     transition: 0.3s ease-in-out;
     cursor: pointer; 
 }
@@ -234,7 +231,6 @@ nav ul li a:hover {
 .proyecto:hover {
     transform:scale(1.06);
     box-shadow: -5px -5px 5px rgb(0, 127, 127), 5px 5px 5px rgb(210, 234, 231);
-    transition: 0.3s ease-in-out;
 }
 
 .contenedor-visual{
@@ -258,6 +254,7 @@ nav ul li a:hover {
 }
 
 .contenedor-visual a {
+    font-size: 1.2vh;
     color: rgb(0, 127, 127);
 }
 
@@ -276,14 +273,15 @@ nav ul li a:hover {
 }
 
 .enviar {
+    text-align: center;
     cursor: pointer;
     margin-top: 5px;
     border: none;
-    width: 110px;
-    height: 50px;
     background-color: rgb(0, 127, 127);
+    font-size: clamp(13px,1.8vw,17px);
     color: #ffffff;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0), -2px -2px 2px rgb(0, 0, 0);
+    box-shadow: 4px 4px 0px rgb(0, 0, 0);
+    padding: 10px 20px;
 }
 
 .formulario-contacto label{
@@ -292,7 +290,7 @@ nav ul li a:hover {
 }
 
 .formulario-contacto input, .formulario-contacto textarea {
-    font-size: 1.1rem;
+    font-size: clamp(12px,1.8vw,15px);
     padding: 10px;
 }
 
@@ -365,15 +363,14 @@ footer address {
         height: 200px;
     }
 
-    .habilidades-blandas li img{
-        width: 150px;
-        transition: 0.6s;
+    #photo-perfil {
+        width: 110px;
+        transition: width 0.3s ease-in-out;
     }
 }
 
 @media(max-width: 1030px) {
     main {
-        transition: 0.5s;
         padding: 0 50px;
     }
 
@@ -381,4 +378,13 @@ footer address {
         max-width: 60%;
         margin: 0 auto;
     }
+
+    .conocimientos-tecnicos li i {
+        font-size: 105px;
+    }
+
+    .habilidades-blandas li img{
+        width: 120px;
+    }
+
 }
