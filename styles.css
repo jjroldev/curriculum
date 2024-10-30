@@ -160,24 +160,33 @@ nav ul li a:hover {
 
 /* Conocimientos Técnicos y Habilidades Blandas Section */
 
-.conocimientos-tecnicos{
+.conocimientos-tecnicos {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-    padding: 40px 0;
-    gap: 90px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    padding: 20px 12vw;
+    gap: 60px;
     text-align: center;
 }
 
-.conocimientos-tecnicos li i {
-    font-size: 130px;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+.conocimientos-tecnicos li {
+    display: flex;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.15);
+    padding: 25px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.conocimientos-tecnicos li img {
+    width: 60%;
+    transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.conocimientos-tecnicos li i:hover {
-    color: rgb(0, 127, 127);
-    transform: scale(1.2);
+.conocimientos-tecnicos li img:hover {
+    transform: scale(1.1);
 }
 
 .hb-container {
@@ -185,52 +194,24 @@ nav ul li a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 35px;
+    padding: 10px 18vw 0 18vw;
     gap: 50px;
     width: 100%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hb-text {
     width: 100%;
 }
 
-.hb-text ul li {
-    box-shadow: 5px 5px 0 rgb(0, 127, 127);
-    border: 2px solid rgb(0, 127, 127);
+.hb-text li {
+    background-color: rgb(0, 127, 127);
+    box-shadow: 5px 5px 0 rgb(0, 0, 0);
+    text-align: center;
     margin: 15px;
     padding: 10px;
     border-radius: 10px;
-    color: rgb(0, 127, 127);
-    font-weight: 500;
-}
-
-.hb-icons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.hb-icons ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
-}
-
-.hb-icons ul li {
-    text-align: center;
-}
-
-.hb-icons ul li i {
-    font-size: clamp(40px,4vw,70px);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.hb-icons ul li i:hover {
-    transform: scale(1.1);
-    color: rgb(0, 127, 127);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
 }
 
 /* Experiencia Section */
@@ -418,6 +399,7 @@ footer address,.phone {
 
     .hb-container {
         flex-direction: column;
+        padding: 10px 5vw 0 5vw;
     }
 }
 
