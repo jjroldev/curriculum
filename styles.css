@@ -2,7 +2,7 @@
 
 * {
     font-family: Poppins;
-    font-size: clamp(15px, 2vw, 18px);
+    font-size: clamp(14px, 2vw, 20px);
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -34,14 +34,14 @@ nav {
 
 h2{
     font-size: clamp(20px, 3vw, 29px);
-    font-weight: 500;
+    font-weight: 700;
     color: rgb(0, 127, 127);
     margin-bottom: 23px;
 }
 
 h3 {
     font-size: clamp(20px, 2vw, 30px);
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(0, 127, 127);
 }
 
@@ -51,31 +51,40 @@ section {
 }
 
 main {
-    padding: 0 150px;
+    margin: 0 150px;
 }
 
 
 /* Header Styles */
 h1 {
     color: rgb(0, 127, 127);
-    font-weight: 800;
-    font-size: clamp(50px, 9vw, 80px);
+    font-weight: 900;
+    font-size: clamp(44px, 8vw, 80px);
+    margin-top: -65px;
 }
 
 .subtitulo {
     font-size: clamp(20px, 3.5vw, 35px);
-    font-weight: 300;
+    font-weight: 500;
     color: rgb(0, 0, 0);
     padding-bottom: 20px;
 }
 
 .header-content {
-    padding: 80px 0 40px 0;
+    margin: 90px 0 20px 0;
+    padding: 20px;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.text-header-content {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 nav ul {
@@ -101,15 +110,17 @@ nav ul li a:hover {
 }
 
 .info-button {
+    width: 40%;
+    margin: 0 auto;
     text-align: center;
     cursor: pointer;
-    margin-top: 5px;
     border: none;
     background-color: rgb(0, 127, 127);
     color: #ffffff;
     font-size: clamp(15px,2vw,19px);
+    font-weight: 400;
     box-shadow: 4px 4px 0px rgb(0, 0, 0);
-    padding: 15px 20px;
+    padding: 15px 5px;
     transition: 0.4s ease-in-out;
 }
 
@@ -164,17 +175,17 @@ nav ul li a:hover {
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    padding: 20px 12vw;
+    padding: 20px 14vw;
     gap: 60px;
     text-align: center;
+    justify-content: center;
 }
 
 .conocimientos-tecnicos li {
     display: flex;
-    width: 80%;
     border-radius: 12px;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.15);
-    padding: 25px 0;
+    padding: 25px 0px;
     justify-content: center;
     align-items: center;
 }
@@ -211,7 +222,8 @@ nav ul li a:hover {
     padding: 10px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    font-weight: 400;
+    font-size: clamp(16px,2vw,20px);
+    font-weight: 500;
 }
 
 /* Experiencia Section */
@@ -221,7 +233,7 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 50px;
     margin-top: 40px;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 #experiencia ul li{
@@ -238,14 +250,14 @@ nav ul li a:hover {
 
 .proyecto-content p {
     margin-top: 10px;
-    font-size: clamp(13px, 2vw, 17px);
+    font-size: clamp(15px, 2vw, 18px);
 }
 
 .proyecto {
     display: flex;
     flex-direction: row;
-    padding: 25px;
-    gap: 30px;
+    padding: 25px 35px;
+    gap: 40px;
     box-shadow: 5px 5px 5px rgb(0, 127, 127), -5px -5px 5px rgb(210, 234, 231);
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -300,12 +312,13 @@ nav ul li a:hover {
     text-align: center;
     cursor: pointer;
     margin-top: 5px;
+    font-weight: 400;
     border: none;
     background-color: rgb(0, 127, 127);
     font-size: clamp(13px,1.8vw,17px);
     color: #ffffff;
     box-shadow: 4px 4px 0px rgb(0, 0, 0);
-    padding: 10px 20px;
+    padding: 12px 30px;
     transition: 0.4s ease-in-out;
 }
 
@@ -317,7 +330,7 @@ nav ul li a:hover {
 }
 
 .formulario-contacto input, .formulario-contacto textarea {
-    font-size: clamp(12px,1.8vw,15px);
+    font-size: clamp(15px,2vw,15px);
     padding: 10px;
 }
 
@@ -371,7 +384,25 @@ footer address,.phone {
     color: rgb(255, 255, 255);
 }
 
+@media(max-width: 370px){
+    h1{
+        font-size: 37px;
+    }
+}
+
 @media(max-width: 806px){
+    h1{
+        margin-top: -50px;
+    }
+
+    .header-content {
+        margin-top: 60px;
+    }
+
+    .info-button {
+        width: 50%;
+    }
+
     .contact-content {
         display: flex;
         flex-direction: column;
@@ -393,41 +424,36 @@ footer address,.phone {
         height: 200px;
     }
 
-    #photo-perfil {
-        width: 150px;
+    .conocimientos-tecnicos li{
+        width: 50%;
+        margin: 0 auto;
     }
 
-    .hb-container {
-        flex-direction: column;
-        padding: 10px 5vw 0 5vw;
+    .hb-container{
+        padding: 10px 0 0 0;
     }
+
+    .hb-container .hb-text li {
+        padding: 15px 10px;
+    }
+
 }
 
 @media(max-width: 1030px) {
 
     .formacion-academica p{
-        max-width: 60%;
+        max-width: 90%;
         margin: 0 auto;
     }
 
-    .conocimientos-tecnicos li i {
-        font-size: 105px;
-    }
-
-    .habilidades-blandas li img{
-        width: 120px;
-    }
-
-    .hb-icons ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
+    #experiencia ul{
+        padding: 0;
     }
 
 }
 
 @media(max-width:1200px){
     main {
-        padding: 0 50px;
+        margin: 0 50px;
     }
 }

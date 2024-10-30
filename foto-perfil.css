@@ -3,36 +3,24 @@
     width: 100%;
     max-width: 240px;
     height: auto;
+    border-radius: 8%;
     position: relative;
     overflow: hidden;
-}
-
-.img-perfil:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 180%;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    transform: skew(45deg);
-    transition: .5s;
-    background: rgba(255, 255, 255, .3);
-}
-
-.img-perfil:hover:before {
-    left: -180%;
 }
 
 .img-perfil img {
     width: 100%;
     height: auto;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     transition: 2s;
+    mask-image: linear-gradient(
+        black 80%,
+        transparent
+    );
 }
 
 .img-perfil:hover img {
-    filter: grayscale(0%);
+    filter: grayscale(100%);
     transform: scale(1.1);
 }
 
