@@ -9,13 +9,15 @@
     <meta name="keywords" content="Curriculum, Desarrollo Web, Diseño Web">
     <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="foto-perfil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul> 
+            <ul>
                 <li><a href="#informacion-personal">Información Personal</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#conocimientos-tecnicos">Conocimientos Técnicos</a></li>
@@ -24,10 +26,30 @@
             </ul>
         </nav>
         <div class="header-content">
-            <img id="photo-perfil" src="images/perfil.jpeg">
-            <h1>Justyn Roldán</h1>
-            <h4 class="subtitulo">Desarrollador Web Junior</h4>  
-            <a href="#informacion-personal" class="info-button">Acerca de mi</a>
+            <div class="img-perfil">
+                <img src="images/perfil.jpeg" alt="perfil">
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/justyn-rold%C3%A1n-mendez-1a460a221/?trk=opento_sprofile_details"><i
+                                class="bx bxl-linkedin-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jjroldev"><i class="bx bxl-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="#contacto"><i class="bx bxs-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="#footer"><i class="bx bxs-phone"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>Justyn Roldán</h1>
+                <h4 class="subtitulo">Desarrollador Web Junior</h4>
+                <a href="#informacion-personal" class="info-button">Acerca de mi</a>
+            </div>
         </div>
     </header>
 
@@ -35,20 +57,28 @@
         <section id="informacion-personal">
             <h2>Información Personal</h2>
             <div class="informacion-personal-content">
-                <p>Estudiante de Ingeniería en Computación con un gran interés en aprender continuamente y explorar nuevas tecnologías. Apasionado por el <strong>desarrollo de software y el desarrollo web</strong>, siempre busco oportunidades para mejorar mis habilidades y contribuir con soluciones creativas e innovadoras.</p>  
+                <p>Estudiante de Ingeniería en Computación con un gran interés en aprender continuamente y explorar
+                    nuevas tecnologías. Apasionado por el <strong>desarrollo de software y el desarrollo web</strong>,
+                    siempre busco oportunidades para mejorar mis habilidades y contribuir con soluciones creativas e
+                    innovadoras.</p>
             </div>
             <article class="formacion-academica">
-                    <h3>Ingeniería en Computación 2021-presente</h3>
-                    <p>FIEC, Facultad de Ingeniería de Electricidad y Computación ESPOL, Escuela Superior Politécnica Del Litoral</p>
-                    <h3>Bachiller en Informática</h3>
-                    <p>UELCP, Unidad Educativa Liceo Cristiano Peninsular 2021</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8156631.521089594!2d-85.05112402980367!3d3.4157797393230718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1729985084817!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>Ingeniería en Computación 2021-presente</h3>
+                <p>FIEC, Facultad de Ingeniería de Electricidad y Computación ESPOL, Escuela Superior Politécnica Del
+                    Litoral</p>
+                <h3>Bachiller en Informática</h3>
+                <p>UELCP, Unidad Educativa Liceo Cristiano Peninsular 2021</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8156631.521089594!2d-85.05112402980367!3d3.4157797393230718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1729985084817!5m2!1ses!2sec"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </section>
 
         <section id="experiencia">
             <h2>Experiencia</h2>
-            <p>He realizado proyectos en conjunto como individuales de índole académicos, algunos de estos proyectos son:</p>
+            <p>He realizado proyectos en conjunto como individuales de índole académicos, algunos de estos proyectos
+                son:</p>
             <ul>
                 <li>
                     <div class="proyecto">
@@ -59,7 +89,11 @@
                                 Principalmente se hace uso de arboles binarios.</p>
                         </div>
                         <div class="contenedor-visual">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gpOHj0YLiLs?si=RXFJ6rka1fAt2woF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/gpOHj0YLiLs?si=RXFJ6rka1fAt2woF"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </li>
@@ -67,10 +101,16 @@
                     <div class="proyecto">
                         <div class="proyecto-content">
                             <h3>Concecionaria de Autos</h3>
-                            <p>Este programa permite a los usuarios ver los vehículos disponibles que están a la venta, además de permitir que el usuario se registre o inicie sesión. El usuario puede poner vehículos a la venta y gestionarlos.</p>
-                        </div>       
+                            <p>Este programa permite a los usuarios ver los vehículos disponibles que están a la venta,
+                                además de permitir que el usuario se registre o inicie sesión. El usuario puede poner
+                                vehículos a la venta y gestionarlos.</p>
+                        </div>
                         <div class="contenedor-visual">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ggx0sVl7Fn8?si=YI_p7-5OVZBBRnLJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/Ggx0sVl7Fn8?si=YI_p7-5OVZBBRnLJ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </li>
@@ -78,11 +118,13 @@
                     <div class="proyecto">
                         <div class="proyecto-content">
                             <h3>Curriculum</h3>
-                            <p>Realicé un proyecto de diseño y desarrollo de una página web enfocada en destacar mis habilidades, logros y experiencia de manera organizada y visualmente atractiva.</p>
+                            <p>Realicé un proyecto de diseño y desarrollo de una página web enfocada en destacar mis
+                                habilidades, logros y experiencia de manera organizada y visualmente atractiva.</p>
                         </div>
                         <div class="contenedor-visual">
                             <img src="images/curriculum.png" alt="">
-                            <a href="https://github.com/jjroldev/curriculum.git">https://github.com/jjroldev/curriculum.git</a>
+                            <a
+                                href="https://github.com/jjroldev/curriculum.git">https://github.com/jjroldev/curriculum.git</a>
                         </div>
                     </div>
                 </li>
@@ -91,7 +133,8 @@
 
         <section id="conocimientos-tecnicos">
             <h2>Conocimientos Técnicos</h2>
-            <p>He realizado proyectos con las siguientes tecnologías:<p>
+            <p>He realizado proyectos con las siguientes tecnologías:
+            <p>
             <ul class="conocimientos-tecnicos">
                 <li><i class="fab fa-java"></i></li>
                 <li><i class="fab fa-python"></i></li>
@@ -111,13 +154,11 @@
                         <li>Trabajo en equipo</li>
                         <li>Adaptabilidad</li>
                         <li>Resolución de problemas</li>
-                        <li>Pensamiento crítico</li>
                         <li>Gestión del tiempo</li>
                         <li>Creatividad</li>
                         <li>Orientación al cliente</li>
-                        <li>Empatía</li>
                     </ul>
-                </div>    
+                </div>
                 <div class="hb-icons">
                     <ul>
                         <li><i class="fas fa-comments"></i></li>
@@ -144,12 +185,14 @@
                     <form action="">
                         <div>
                             <label for="nombre">Nombre completo:</label>
-                            <input placeholder="ejemp: Justyn Jael Roldán Méndez" type="text" id="nombre" name="nombre" required>
+                            <input placeholder="ejemp: Justyn Jael Roldán Méndez" type="text" id="nombre" name="nombre"
+                                required>
                         </div>
 
                         <div>
                             <label for="email">Correo electrónico:</label>
-                            <input placeholder="ejem: mariopepe@gmail.com" type="email" id="email" name="email" required>
+                            <input placeholder="ejem: mariopepe@gmail.com" type="email" id="email" name="email"
+                                required>
                         </div>
 
                         <div>
@@ -179,13 +222,17 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <p>&copy; 2024 Justyn Roldán. Todos los derechos reservados.</p>
         <address>
-            <img src="images/outlook.png" alt=""><a class="contacto-footer" href="mailto:jjroldan@espol.edu.ec">jjroldan@espol.edu.ec</a>
+            <img src="images/outlook.png" alt=""><a class="contacto-footer"
+                href="mailto:jjroldan@espol.edu.ec">jjroldan@espol.edu.ec</a>
         </address>
+        <p class="phone">
+            <img src="images/whatsapp.png" alt=""><a href="tel:+593995699914">0995699914</a>
+        </p>
     </footer>
-    
+
 </body>
 
 </html>
