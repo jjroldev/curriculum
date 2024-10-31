@@ -24,14 +24,6 @@ body {
     padding: 0;
 }
 
-nav {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
 h2{
     font-size: clamp(20px, 3vw, 29px);
     font-weight: 700;
@@ -71,7 +63,7 @@ h1 {
 }
 
 .header-content {
-    margin: 90px 0 20px 0;
+    margin: 105px 0 20px 0;
     padding: 20px;
     font-size: 20px;
     display: flex;
@@ -88,25 +80,37 @@ h1 {
 }
 
 nav ul {
-    display: flex;
+    display:flex;
+    flex-direction: row;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    gap: 20px;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 150px;
 }
 
 nav ul li {
+    width: 100%;
     text-align: center;
 }
 
 nav ul li a {
+    border-bottom: 4px solid rgb(0, 127, 127);
     display: block;
     font-size: clamp(12px, 2vw, 20px);
-    color: rgb(255, 255, 255);
-    transition: background-color 0.4s ease-in-out;
+    color: rgb(0, 127, 127);
+    transition: 0.4s ease-in-out;
     padding: 23px;
+    font-weight: 400;
 }
 
 nav ul li a:hover {
     background-color: rgb(0, 127, 127);
+    color: #fff;
 }
 
 .info-button {
@@ -370,14 +374,18 @@ footer {
 }
 
 footer img {
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
 }
 
 footer address,.phone {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+footer p , footer a{
+    font-size: clamp(14px, 2vw, 18px);
 }
 
 .phone a{
@@ -393,10 +401,6 @@ footer address,.phone {
 @media(max-width: 806px){
     h1{
         margin-top: -50px;
-    }
-
-    .header-content {
-        margin-top: 60px;
     }
 
     .info-button {
@@ -439,7 +443,13 @@ footer address,.phone {
 
 }
 
-@media(max-width: 1030px) {
+@media(max-width: 500px){
+    .header-content{
+        margin-top: 85px;
+    }
+}
+
+@media(max-width: 1020px) {
 
     .formacion-academica p{
         max-width: 90%;
