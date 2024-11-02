@@ -161,7 +161,7 @@ nav ul li a:hover {
     align-items: center;
     margin-top: 30px;
     gap: 20px;
-    background-color: var(--tercer-color);
+    background-color: rgb(249, 249, 249);
 }
 
 .formacion-academica h3 {
