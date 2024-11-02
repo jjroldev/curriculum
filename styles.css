@@ -9,6 +9,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-principal: rgb(0, 127, 127);
+    --secondary-color: #000;
+    --tercer-color: #fff;
+}
+
 ul {
     list-style: none;
 }
@@ -24,17 +30,18 @@ body {
     padding: 0;
 }
 
-h2{
+h2 {
     font-size: clamp(20px, 3vw, 29px);
     font-weight: 700;
-    color: rgb(0, 127, 127);
+    color: var(--color-principal);
     margin-bottom: 23px;
 }
 
 h3 {
     font-size: clamp(20px, 2vw, 30px);
     font-weight: 600;
-    color: rgb(0, 127, 127);
+    color: var(--color-principal);
+    ;
 }
 
 section {
@@ -49,7 +56,8 @@ main {
 
 /* Header Styles */
 h1 {
-    color: rgb(0, 127, 127);
+    color: var(--color-principal);
+    ;
     font-weight: 900;
     font-size: clamp(44px, 8vw, 80px);
     margin-top: -65px;
@@ -58,7 +66,7 @@ h1 {
 .subtitulo {
     font-size: clamp(20px, 3.5vw, 35px);
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     padding-bottom: 20px;
 }
 
@@ -80,7 +88,7 @@ h1 {
 }
 
 nav ul {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     background: rgba(255, 255, 255, .4);
@@ -99,18 +107,21 @@ nav ul li {
 }
 
 nav ul li a {
-    border-bottom: 4px solid rgb(0, 127, 127);
+    border-bottom: 4px solid var(--color-principal);
+    ;
     display: block;
     font-size: clamp(12px, 2vw, 20px);
-    color: rgb(0, 127, 127);
+    color: var(--color-principal);
+    ;
     transition: 0.4s ease-in-out;
     padding: 23px;
     font-weight: 400;
 }
 
 nav ul li a:hover {
-    background-color: rgb(0, 127, 127);
-    color: #fff;
+    background-color: var(--color-principal);
+    ;
+    color: var(--tercer-color);
 }
 
 .info-button {
@@ -119,28 +130,30 @@ nav ul li a:hover {
     text-align: center;
     cursor: pointer;
     border: none;
-    background-color: rgb(0, 127, 127);
-    color: #ffffff;
-    font-size: clamp(15px,2vw,19px);
+    background-color: var(--color-principal);
+    ;
+    color: var(--tercer-color);
+    font-size: clamp(15px, 2vw, 19px);
     font-weight: 400;
-    box-shadow: 4px 4px 0px rgb(0, 0, 0);
+    box-shadow: 4px 4px 0px var(--secondary-color);
     padding: 15px 5px;
     transition: 0.4s ease-in-out;
 }
 
-.info-button:hover,.enviar:hover {
-    background-color: rgb(40, 127, 127);
-    box-shadow: -3px -3px 0px rgb(0, 0, 0);
+.info-button:hover,
+.enviar:hover {
+    background-color: var(--color-principal);
+    box-shadow: -3px -3px 0px var(--secondary-color);
     transform: scale(1.1);
 }
 
 /*Info Personal Section*/
 
-.informacion-personal-content p strong{
+.informacion-personal-content p strong {
     font-weight: 600;
 }
 
-.formacion-academica{
+.formacion-academica {
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -148,20 +161,21 @@ nav ul li a:hover {
     align-items: center;
     margin-top: 30px;
     gap: 20px;
-    background-color: rgb(232, 232, 232);
-} 
+    background-color: var(--tercer-color);
+}
 
-.formacion-academica h3{
+.formacion-academica h3 {
     font-size: clamp(17px, 3vw, 25px);
-    color: rgb(0, 127, 127);    
+    color: var(--color-principal);
+    ;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
-.formacion-academica p{
+.formacion-academica p {
     font-size: clamp(13px, 2vw, 16px);
-    color: #000000;
+    color: var(--secondary-color);
     max-width: 45%;
     margin: 0 auto;
     text-align: center;
@@ -219,14 +233,15 @@ nav ul li a:hover {
 }
 
 .hb-text li {
-    background-color: rgb(0, 127, 127);
-    box-shadow: 5px 5px 0 rgb(0, 0, 0);
+    background-color: var(--color-principal);
+    ;
+    box-shadow: 5px 5px 0 var(--secondary-color);
     text-align: center;
     margin: 15px;
     padding: 10px;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
-    font-size: clamp(16px,2vw,20px);
+    color: var(--tercer-color);
+    font-size: clamp(16px, 2vw, 20px);
     font-weight: 500;
 }
 
@@ -240,7 +255,7 @@ nav ul li a:hover {
     padding: 0 40px;
 }
 
-#experiencia ul li{
+#experiencia ul li {
     width: 100%;
 }
 
@@ -262,17 +277,17 @@ nav ul li a:hover {
     flex-direction: row;
     padding: 25px 35px;
     gap: 40px;
-    box-shadow: 5px 5px 5px rgb(0, 127, 127), -5px -5px 5px rgb(210, 234, 231);
+    box-shadow: 5px 5px 5px var(--color-principal), -5px -5px 5px rgb(210, 234, 231);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .proyecto:hover {
-    transform:scale(1.06);
-    box-shadow: -5px -5px 5px rgb(0, 127, 127), 5px 5px 5px rgb(210, 234, 231);
+    transform: scale(1.06);
+    box-shadow: -5px -5px 5px var(--color-principal), 5px 5px 5px rgb(210, 234, 231);
 }
 
-.contenedor-visual{
+.contenedor-visual {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -285,7 +300,8 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.contenedor-visual iframe , .contenedor-visual img{
+.contenedor-visual iframe,
+.contenedor-visual img {
     width: 100%;
     max-height: 200px;
     border: none;
@@ -295,7 +311,8 @@ nav ul li a:hover {
 .contenedor-visual a {
     word-wrap: break-word;
     font-size: clamp(11px, 2vw, 15px);
-    color: rgb(0, 127, 127);
+    color: var(--color-principal);
+    ;
 }
 
 /* Contact Section */
@@ -318,27 +335,31 @@ nav ul li a:hover {
     margin-top: 5px;
     font-weight: 400;
     border: none;
-    background-color: rgb(0, 127, 127);
-    font-size: clamp(13px,1.8vw,17px);
-    color: #ffffff;
-    box-shadow: 4px 4px 0px rgb(0, 0, 0);
+    background-color: var(--color-principal);
+    ;
+    font-size: clamp(13px, 1.8vw, 17px);
+    color: var(--tercer-color);
+    box-shadow: 4px 4px 0px var(--secondary-color);
     padding: 12px 30px;
     transition: 0.4s ease-in-out;
 }
 
 /*.enviar:hover se encuentra más arriba en Header Styles*/
 
-.formulario-contacto label{
-    color: rgb(0, 127, 127);
+.formulario-contacto label {
+    color: var(--color-principal);
+    ;
     font-weight: 400;
 }
 
-.formulario-contacto input, .formulario-contacto textarea {
-    font-size: clamp(15px,2vw,15px);
+.formulario-contacto input,
+.formulario-contacto textarea {
+    font-size: clamp(15px, 2vw, 15px);
     padding: 10px;
 }
 
-.contacto-presencial, .formulario-contacto {
+.contacto-presencial,
+.formulario-contacto {
     width: 100%;
 }
 
@@ -361,45 +382,45 @@ nav ul li a:hover {
 footer {
     display: flex;
     flex-direction: column;
-    font-size: 35px;
-    color: #ffffff;
-    text-align: center;
-    padding: 40px;
-    background-color: rgb(0, 0, 0);
-    gap: 10px;
-}
-
-.contacto-footer {
-    color: #fff;
-}
-
-footer img {
-    width: 22px;
-    height: 22px;
-}
-
-footer address,.phone {
-    display: flex;
-    justify-content: center;
+    padding: 25px;
+    background-color: var(--secondary-color);
     gap: 20px;
 }
 
-footer p , footer a{
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    color: var(--tercer-color);
     font-size: clamp(14px, 2vw, 18px);
 }
 
-.phone a{
-    color: rgb(255, 255, 255);
+.redes-sociales ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
 }
 
-@media(max-width: 370px){
-    h1{
+.redes-sociales ul li a i {
+    color: var(--tercer-color);
+    font-size: clamp(21px, 3vw, 30px);
+    transition: 0.3s ease-in-out;
+}
+
+.redes-sociales ul li a i:hover {
+    color: var(--color-principal);
+}
+
+@media(max-width: 370px) {
+    h1 {
         font-size: 37px;
     }
 }
 
-@media(max-width: 806px){
-    h1{
+@media(max-width: 806px) {
+    h1 {
         margin-top: -50px;
     }
 
@@ -417,8 +438,9 @@ footer p , footer a{
         align-items: center;
         gap: 20px;
     }
-    
-    .proyecto-content,.video-proyecto-contenedor {
+
+    .proyecto-content,
+    .video-proyecto-contenedor {
         width: 100%;
         text-align: center;
     }
@@ -428,12 +450,12 @@ footer p , footer a{
         height: 200px;
     }
 
-    .conocimientos-tecnicos li{
+    .conocimientos-tecnicos li {
         width: 50%;
         margin: 0 auto;
     }
 
-    .hb-container{
+    .hb-container {
         padding: 10px 0 0 0;
     }
 
@@ -443,26 +465,26 @@ footer p , footer a{
 
 }
 
-@media(max-width: 500px){
-    .header-content{
+@media(max-width: 500px) {
+    .header-content {
         margin-top: 85px;
     }
 }
 
 @media(max-width: 1020px) {
 
-    .formacion-academica p{
+    .formacion-academica p {
         max-width: 90%;
         margin: 0 auto;
     }
 
-    #experiencia ul{
+    #experiencia ul {
         padding: 0;
     }
 
 }
 
-@media(max-width:1200px){
+@media(max-width:1200px) {
     main {
         margin: 0 50px;
     }
